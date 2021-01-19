@@ -101,7 +101,7 @@ form {
 	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	border: transparent;
 	display: flex;
-	margin-left: -4rem;
+	margin-left: -4.2rem;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
@@ -137,7 +137,7 @@ form {
 @media only screen and (min-width: 900px) {
 	.main-wrapper {
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 60% 40%;
 		grid-template-rows: 100px 1fr;
 		height: 100vh;
 	}
@@ -150,20 +150,21 @@ form {
 	}
 
 	.logo {
-		margin: 3rem 6rem;
+		margin: 4rem 6rem;
 		width: auto;
 	}
 
 	.main {
 		margin: 4rem 6rem;
 		text-align: left;
+		max-width: 500px;
 	}
 
 	.main-title {
 		color: var(--neutral);
 		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 3.5rem;
+		font-weight: 600;
+		font-size: 4rem;
 		letter-spacing: 1.25rem;
 		line-height: 1;
 		margin-bottom: 2rem;
@@ -180,6 +181,6 @@ form {
 		border-radius: 48px;
 		width: 90px;
 		background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-		margin-left: -5rem;
+		margin-left: -5.5rem;
 	}
 }
