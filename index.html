@@ -15,25 +15,24 @@
 </head>
 <body>
 <main class="main-wrapper">
+  <img src="images/logo.svg" class="logo"/>
+  <div class="img-wrapper">
+  <div class="hero-img"></div> 
+</div>
 <div class="main">
-<img src="images/logo.svg" class="logo"/>
- <h1 class="main-title">We're coming soon</h1> 
-
+ <h1 class="main-title"><span>We're</span> coming soon</h1> 
   <p class="main-text">Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.</p>
+<form id="form" class="form" name="emailForm" onsubmit="return validateEmail();">
+  <label for="email"></label>
+  <input type="email" placeholder="Email Address" id="email" class="email-input" aria-label="email" required/>
+  <img src="/images/icon-error.svg" alt="error" class="error-img">
+  <button class="submit-btn" type="submit" value="Submit"><img src="images/icon-arrow.svg" alt="arrow pointing to right" /></button>
+</form>
+<p class="error-message"></p>
 
-<input type="email" placeholder="Email Address"/>
-</div>
-<div class="hero-image">
-  <img src="images/hero-desktop.jpg" alt="hero image" class="hero-desktop" />
 </div>
 </main>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">IviLili</a>.
-    </p>
-  </footer>
+<script src="index.js"></script>
 </body>
 </html>
